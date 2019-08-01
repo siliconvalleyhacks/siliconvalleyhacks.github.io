@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="That's a landing page for our first MATRIX Labs Hackathon">
+    <meta name="author" content="Matrix Labs Brasil">
+
+    <title>Silicon Valley Hacks</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/everloop.png" type="image/x-icon">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+    <style type="text/css" id="custom-fonts">
+      /* custom fonts */
+    @font-face {font-family: 'Roboto Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.ttf') format('truetype');}
+    @font-face {font-family: 'Roboto Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.woff') format('woff');}
+    @font-face {font-family: 'Roboto Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.woff') format('woff');}
+    @font-face {font-family: 'Apercu Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.woff') format('woff');}
+    @font-face {font-family: 'Apercu Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.woff') format('woff');}
+    @font-face {font-family: 'Apercu Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.woff') format('woff');}
+    @font-face {font-family: 'FreigSanProBold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.otf') format('opentype');}
+    @font-face {font-family: 'FreigSanProMed';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.otf') format('opentype');}
+    @font-face {font-family: 'FaktSlabProMedium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.otf') format('opentype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.eot') format('eot');}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            Menu <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll text-center" href="#page-top">
+			
+            <img id="everloop" src="img/everloop.png"/> <span class="hidden-xs hidden-sm "><span class="light">Silicon Valley </span> Hacks</span>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#generalRules">Venue</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#schedule">Schedule</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#projects">FAQ</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#location">Sponsors</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">Join Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+				  <br>
+			  <br>
+			  <br>
+			  <br>
+			  <br>
+			  <br>
+		 
+              <h1 class="brand-heading">Silicon Valley Hacks </h1>
+              <p class="intro-text">Hackathon for all high school students across the Bay Area!</p>
+              <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>About</h2>
+          <p>We bring together hundreds of high school students from across the Bay Area to work together and make their ideas a reality.
+We'll provide the food, refreshments and hacking spaces for you—the hackers—to do your magic. Just bring your ideas and your passion
+</p>
+
+          
+ 
+          <!-- Modal -->
+          <div class="modal fade" id="modal" tabindex="-1" role="dialog" >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Participantes do 1˚ Silicon Valley Hacks Hackathon</h4>
+                </div>
+                <div class="modal-body">
+                  João Victor Mota do Nascimento</br>
+                  Aecio Júnior</br>
+                  Victor Rodrigues Figueiredo</br>
+                  Ícaro Cardoso Rios</br>
+                  Cleybson cardoso leite</br>
+                  José Ricardo Nogueira Magalhães</br>
+                  Lindelmo Havallon da Silva Pinto Azevedo</br>
+                  Lucas Almeida Silva</br>
+                  Lucas Ventura Paiva</br>
+                  Weverson Gomes</br>
+                  Nathalia Garcia dos Reis</br>
+                  Arthur Hagnês de Jesus Ferreira</br>
+                  José Victor Cardim Moura</br>
+                  Roberto Silva Nunes Lago</br>
+                  Matheus Galvão Correia</br>
+                  Lucas Vinícius dos Santos Assis</br>
+                  Ricardo Batista da Silva</br>
+                  Lucas Santana Carneiro</br>
+                  Nilson Augusto Magalhães Moraes Neto</br>
+                  Leandro Pereira Sampaio
+                </div>
+                <div class="modal-footer">
+                  </br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- General Rules Section -->
+    <section id="generalRules" class="darker-black content-section text-center ">
+      <div class="download-section">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+            <h2>Venue</h2>
+             
+            <p>Saturday, 9:00 AM at Juniper Aspiration Dome</p>
+       </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Agenda</h2>
+            <p>Please plan to arrive atleast 10 minutes early to check-in</p>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 8:30am</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Apresentação do Hackathon</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 9:00am</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Início do Hackathon</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 10:30am</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Limite para envio do time e projeto</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 11:30am</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Limite para envio do link do GitHub</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">17/03/2017 - 1:30pm</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Limite para publicação e envio de link do App</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">17/03/2017 - 3:30pm</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Palco Principal (Auditório 4)</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Início da Pitch Session</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">17/03/2017 - 4:10pm</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Palco Principal (Auditório 4)</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Premiação do Hackathon</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="darker-black content-section">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2 class="text-center">FAQ</h2>
+            <p>
+              <a href="https://github.com/PedroPCardoso/moodify"><strong>Moodify</strong></a> </br>
+              <strong>Team: </strong>Pedro Cardoso, Luan Rios, Rejanio Moraes </br>
+              <strong>Description: </strong>Recognize user's mood, search for Spotify playlists to help his day. These playlists are found by user's interest, crossing information like geolocation and most played songs.
+            </p>
+            <p>
+              <a href="https://github.com/vjoao/maternity-sentinel"><strong>Maternity Sentinel</strong></a> </br>
+              <strong>Team: </strong>João Victor Mota, Lucas Carneiro, Lucas Vinicius, Nilson Augusto </br>
+              <strong>Description: </strong>A device responsible by monitoring maternity environment. The main features are: Facial recognition for medical responsible team, verification for humidity and temperature to certify the ideal conditions for maternity.
+            </p>
+            <p>
+              <a href="https://github.com/weversongomes/pillcontroller"><strong>PillController</strong></a> </br>
+              <strong>Team: </strong>Weverson Gomes, José Victor, Roberto Nunes, Iago Rios </br>
+              <strong>Description: </strong>The main purpose is control lockers that keeps pills and helps users not forget to take his medicines.
+            </p>
+            <p>
+              <a href="https://github.com/Figueiredovr/slider"><strong>Slider</strong></a> </br>
+              <strong>Team: </strong>Victor R. Figueiredo, Lucas A. Silva, Leandro Sampaio, Matheus Galvão</br>
+              <strong>Description: </strong>Control Google Slide presentations with gestures.
+            </p>
+            <p>
+              <a href="https://github.com/lucaspaiva1/hackathon"><strong>SmartOffice</strong></a> </br>
+              <strong>Team: </strong>Lucas Paiva, Francisco Alberto, Lindelmo Silva, Cleybson Leite </br>
+              <strong>Description: </strong>Automate an office, you will be able to control room temperature and light using the smartphone. Another great feature is the ability to unlock the office door using facial recognition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Sponsors</h2>
+            <p>None</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     
+
+    <!-- Contact Section -->
+    <section id="contact" class="darker-black container content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>Join Us!</h2>
+          <p>Want to work with us? We’ll take all the help we can get! Fill out this volunteering application and we’ll get back to you as soon as possible. </p>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Silicon Valley Hacks 2019</p>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe7xQb1YWBLPDqFYAKE4G8_ysGyfuYyPg"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+  </body>
+</html>
